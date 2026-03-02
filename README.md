@@ -1,7 +1,7 @@
 # EDNA_Merchandise_Sales_Report
 ![Main_Page](https://github.com/tirthvyas95/EDNA_Merchandise_Sales_Report/blob/00442ec2f12f2b57948e4801e11214f445b24fbd/Screenshots/Home%20Page.png)
 ## Introduction
-This is a portfolio project made by using the dataset provided by Enterprise DNA in collaboration with Onyx Data, where we play a role as a Data Analyst who is proficient in Power BI and Python tasked with finding meaningful insights so that key stakeholders can make better data driven decisions. A Popular TickTok content creater named Lee Chatman who as more than 7 million follower has generously provided us with the sales data of thier online merchandise store. This analysis looks at how his merchandise sales are going and what we can learn from the data.
+This is a portfolio project made by using the dataset provided by [Enterprise DNA](https://enterprisedna.co/) in collaboration with Onyx Data, where we play a role as a Data Analyst who is proficient in [Power BI](https://www.microsoft.com/en-us/power-platform/products/power-bi) and [Python](https://www.python.org/) tasked with finding meaningful insights so that key stakeholders can make better data driven decisions. A Popular TickTok content creater named Lee Chatman who as more than 7 million follower has generously provided us with the [sales data](https://enterprisedna.co/challenges/merchandise-sales-dataset) of thier online merchandise store. This analysis looks at how his merchandise sales are going and what we can learn from the data.
 
 
 The main feature of this report is that the calendar used for time analysis is the Retail 4-5-4 Calendar used by all the major players in this business segment. Also, we have incorporated sentiment analysis in this report by using Python.
@@ -92,15 +92,15 @@ I am still in the process of generating a more generalised version of this calen
 
 ![Calendar_Data_View](https://github.com/tirthvyas95/EDNA_Merchandise_Sales_Report/blob/00442ec2f12f2b57948e4801e11214f445b24fbd/Screenshots/Calendar_Data_View.png)
 
-You can substitue the start and end date in the CALENDAR() function of you want to use this template, also if you are looking for the template for 4-4-5 Retail calendar you can check out my other repository called ----. I will standardarize this DAX and upload it into another repository later.
+You can substitue the start and end date in the CALENDAR() function of you want to use this template, also if you are looking for the template for 4-4-5 Retail calendar you can check out my other repository called [EDNA_Mobile_Phone_Sales_Analysis](https://github.com/tirthvyas95/EDNA_Mobile_Phone_Sales_Analysis). I will standardarize this DAX and upload it into another repository later.
 ### sentiment_scores Table:
 Every porject that I do, I try to incorporate something new, for this project it is the sentiment analysis. In order to analysis the sentiment in the Reviews column we will use a python script by using import from a python script feature. We will need the NLTK python library for this task and since it is not supported on the Power BI service because python based visuals on Power BI service only supports some base libraries like Pandas and Numpy we would not get a chance to upload this to Power BI service. So we can just use the import from python script feature, I am sure there should be a way by using Power Automate but here we are demonstrating this report as a proof concept it should suffice.
 
 **Libraries Used:**
-1. Pandas: For importing from excel and converting and using the data as a pandas dataframe
-2. Numpy: For matrix multipication
-3. NLTK: Natural Language Toolkit for sentiment analysis
-4. TQDM: For monitoring and testing
+1. [Pandas](https://pandas.pydata.org/): For importing from excel and converting and using the data as a pandas dataframe
+2. [Numpy](https://numpy.org/): For matrix multipication
+3. [NLTK](https://www.nltk.org/): Natural Language Toolkit for sentiment analysis
+4. [TQDM](https://pypi.org/project/tqdm/): For monitoring and testing the script
 
 Here is the python script used for importing sentiment scores into Power BI:
 ```
